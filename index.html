@@ -1,0 +1,1113 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ray Portfolio</title>
+        <meta name="robots" content="noindex, nofollow" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="greeting-overlay">
+            <span id="greeting-text"></span>
+        </div>
+
+        <div id="cursor-dot"></div>
+        <div id="cursor-ring"></div>
+
+        <nav id="navbar">
+            <a href="#hero" class="nav-logo">RAY<span></span></a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#hero" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#certificates" class="mobile-link">Certificates</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+
+        <!-- HERO -->
+        <section id="hero">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="hero-inner">
+                <div class="hero-left">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-headline">
+                        <strong>Rayhan</strong> Aulia Ramadhan
+                    </h1>
+                    <div class="hero-typed-wrapper">
+                        <span id="typed-output"></span>
+                    </div>
+                    <p class="hero-description">
+                        A passionate 10th-grader from
+                        <a
+                            href="https://smkn1pangandaran.sch.id/"
+                            target="_blank"
+                            rel="noopener"
+                            style="
+                                color: inherit;
+                                text-decoration: underline;
+                                text-underline-offset: 3px;
+                            "
+                            >SMKN 1 Pangandaran</a
+                        >, majoring in Software Engineering. I write code,
+                        explore data, and build things on the web — one line at
+                        a time.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn-primary"
+                            >View My Work ↓</a
+                        >
+                        <a href="#contact" class="btn-secondary"
+                            >Let's Connect</a
+                        >
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-shape-container">
+                        <svg
+                            class="hero-orbits hero-orbits-back"
+                            viewBox="0 0 420 420"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                        >
+                            <defs>
+                                <clipPath
+                                    id="topHalfClip"
+                                    clipPathUnits="userSpaceOnUse"
+                                >
+                                    <rect
+                                        x="-10"
+                                        y="-10"
+                                        width="440"
+                                        height="220"
+                                    />
+                                </clipPath>
+                                <filter
+                                    id="glowBack"
+                                    x="-100%"
+                                    y="-100%"
+                                    width="300%"
+                                    height="300%"
+                                >
+                                    <feGaussianBlur
+                                        stdDeviation="2.5"
+                                        result="blur"
+                                    />
+                                    <feMerge>
+                                        <feMergeNode in="blur" />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
+                                <path
+                                    id="orbitPath1b"
+                                    d="M 409.3 129.5 A 215 85 -22 1 1 10.7 290.5 A 215 85 -22 1 1 409.3 129.5"
+                                />
+                            </defs>
+                            <g clip-path="url(#topHalfClip)">
+                                <ellipse
+                                    cx="210"
+                                    cy="210"
+                                    rx="215"
+                                    ry="85"
+                                    stroke="rgba(184,154,106,0.55)"
+                                    stroke-width="1.5"
+                                    fill="none"
+                                    transform="rotate(-22 210 210)"
+                                />
+                            </g>
+                            <g
+                                clip-path="url(#topHalfClip)"
+                                filter="url(#glowBack)"
+                            >
+                                <circle r="3.5" fill="#B89A6A">
+                                    <animate
+                                        attributeName="fill"
+                                        values="#B89A6A;#D4B896;#B89A6A"
+                                        dur="8s"
+                                        repeatCount="indefinite"
+                                    />
+                                    <animateMotion
+                                        dur="8s"
+                                        repeatCount="indefinite"
+                                        rotate="none"
+                                    >
+                                        <mpath href="#orbitPath1b" />
+                                    </animateMotion>
+                                </circle>
+                            </g>
+                        </svg>
+
+                        <div class="vinyl-disc" id="vinylDisc">
+                            <div class="hero-shape-bg"></div>
+                            <div class="hero-initials">RAY</div>
+                        </div>
+
+                        <svg
+                            class="tonearm-svg"
+                            id="tonearm"
+                            viewBox="0 0 34 230"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-label="Click to play"
+                        >
+                            <defs>
+                                <linearGradient
+                                    id="armGrad"
+                                    x1="0"
+                                    y1="0"
+                                    x2="1"
+                                    y2="0"
+                                >
+                                    <stop offset="0%" stop-color="#2a2a2a" />
+                                    <stop offset="50%" stop-color="#505050" />
+                                    <stop offset="100%" stop-color="#2a2a2a" />
+                                </linearGradient>
+                            </defs>
+                            <circle
+                                cx="17"
+                                cy="17"
+                                r="13"
+                                fill="#1a1a1a"
+                                stroke="#B89A6A"
+                                stroke-width="1.5"
+                            />
+                            <circle cx="17" cy="17" r="5.5" fill="#B89A6A" />
+                            <circle cx="17" cy="17" r="2" fill="#1a1a1a" />
+                            <rect
+                                x="14.5"
+                                y="14"
+                                width="5"
+                                height="172"
+                                rx="2.5"
+                                fill="url(#armGrad)"
+                            />
+                            <polygon
+                                points="10,186 24,186 21,207 13,207"
+                                fill="#1a1a1a"
+                                stroke="#333"
+                                stroke-width="0.5"
+                            />
+                            <line
+                                x1="17"
+                                y1="207"
+                                x2="17"
+                                y2="222"
+                                stroke="#B89A6A"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                            />
+                            <circle cx="17" cy="223" r="2" fill="#B89A6A" />
+                        </svg>
+
+                        <div class="hero-line-accent"></div>
+                        <div class="hero-dot-grid">
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <div class="badge-orbit-wrapper">
+                            <div class="badge-orbit-ring"></div>
+                            <div class="badge-orbit-dot"></div>
+                            <div class="badge-center">
+                                <div class="hero-badge">
+                                    <span class="hero-badge-inner">1 Yr</span>
+                                    <span class="hero-badge-label">Coding</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg
+                            class="hero-orbits hero-orbits-front"
+                            viewBox="0 0 420 420"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                        >
+                            <defs>
+                                <clipPath
+                                    id="botHalfClip"
+                                    clipPathUnits="userSpaceOnUse"
+                                >
+                                    <rect
+                                        x="-10"
+                                        y="210"
+                                        width="440"
+                                        height="230"
+                                    />
+                                </clipPath>
+                                <filter
+                                    id="glowFront"
+                                    x="-100%"
+                                    y="-100%"
+                                    width="300%"
+                                    height="300%"
+                                >
+                                    <feGaussianBlur
+                                        stdDeviation="2.5"
+                                        result="blur"
+                                    />
+                                    <feMerge>
+                                        <feMergeNode in="blur" />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
+                                <path
+                                    id="orbitPath1f"
+                                    d="M 409.3 129.5 A 215 85 -22 1 1 10.7 290.5 A 215 85 -22 1 1 409.3 129.5"
+                                />
+                            </defs>
+                            <g clip-path="url(#botHalfClip)">
+                                <ellipse
+                                    cx="210"
+                                    cy="210"
+                                    rx="215"
+                                    ry="85"
+                                    stroke="rgba(184,154,106,0.55)"
+                                    stroke-width="1.5"
+                                    fill="none"
+                                    transform="rotate(-22 210 210)"
+                                />
+                            </g>
+                            <g
+                                clip-path="url(#botHalfClip)"
+                                filter="url(#glowFront)"
+                            >
+                                <circle r="3.5" fill="#B89A6A">
+                                    <animate
+                                        attributeName="fill"
+                                        values="#B89A6A;#D4B896;#B89A6A"
+                                        dur="8s"
+                                        repeatCount="indefinite"
+                                    />
+                                    <animateMotion
+                                        dur="8s"
+                                        repeatCount="indefinite"
+                                        rotate="none"
+                                    >
+                                        <mpath href="#orbitPath1f" />
+                                    </animateMotion>
+                                </circle>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+            <svg
+                class="hero-orbit-bg"
+                viewBox="0 0 900 900"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+            >
+                <defs>
+                    <path
+                        id="orbitPathBg"
+                        d="M 851.0 364.8 A 410 160 -12 1 1 49.0 535.2 A 410 160 -12 1 1 851.0 364.8"
+                    />
+                    <filter
+                        id="glowBg"
+                        x="-200%"
+                        y="-200%"
+                        width="500%"
+                        height="500%"
+                    >
+                        <feGaussianBlur stdDeviation="3" result="blur" />
+                        <feMerge>
+                            <feMergeNode in="blur" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+                </defs>
+                <ellipse
+                    cx="450"
+                    cy="450"
+                    rx="410"
+                    ry="160"
+                    stroke="rgba(184,154,106,0.18)"
+                    stroke-width="1.5"
+                    fill="none"
+                    transform="rotate(-12 450 450)"
+                />
+                <g filter="url(#glowBg)">
+                    <ellipse
+                        rx="10"
+                        ry="2.5"
+                        stroke="#B89A6A"
+                        stroke-width="0.8"
+                        stroke-opacity="0.5"
+                        fill="none"
+                        cy="-0.5"
+                    />
+                    <circle r="5" fill="#1a1a1a" />
+                    <circle r="4" fill="#B89A6A" opacity="0.85" />
+                    <line
+                        x1="-10"
+                        y1="-0.5"
+                        x2="-5"
+                        y2="-0.5"
+                        stroke="#B89A6A"
+                        stroke-width="1.2"
+                        stroke-opacity="0.9"
+                        stroke-linecap="round"
+                    />
+                    <line
+                        x1="5"
+                        y1="-0.5"
+                        x2="10"
+                        y2="-0.5"
+                        stroke="#B89A6A"
+                        stroke-width="1.2"
+                        stroke-opacity="0.9"
+                        stroke-linecap="round"
+                    />
+                    <animateMotion
+                        dur="22s"
+                        repeatCount="indefinite"
+                        rotate="none"
+                    >
+                        <mpath href="#orbitPathBg" />
+                    </animateMotion>
+                </g>
+            </svg>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="section-inner">
+                <div class="about-grid">
+                    <div class="reveal">
+                        <div class="polaroid-card">
+                            <div class="polaroid-inner">
+                                <div class="polaroid-front">
+                                    <div class="polaroid-frame">
+                                        <img
+                                            src="img/rayProfile.jpg"
+                                            alt="Rayhan Aulia Ramadhan"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <div class="polaroid-caption">
+                                        Ray ✦ 2026
+                                    </div>
+                                </div>
+                                <div class="polaroid-back">
+                                    <span class="quote-mark">"</span>
+                                    <p class="quote-text">
+                                        The best way to predict the future is to
+                                        invent it.
+                                    </p>
+                                    <span class="quote-author">— Alan Kay</span>
+                                    <p class="fun-fact">
+                                        🎯 Fun fact: I started coding with
+                                        Python just one year ago, and now I've
+                                        already built Python small projects and
+                                        web apps with Vibe Coding. The journey
+                                        is just beginning!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal reveal-delay-2">
+                        <span class="section-label">About Me</span>
+                        <h2 class="section-title">
+                            Crafting ideas<br />into <em>digital reality</em>
+                        </h2>
+                        <div class="section-divider"></div>
+                        <div class="about-text-block">
+                            <p>
+                                Hello! I'm
+                                <strong>Rayhan Aulia Ramadhan</strong>, a
+                                10th-grade student at
+                                <a
+                                    href="https://smkn1pangandaran.sch.id/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    style="
+                                        color: inherit;
+                                        text-decoration: underline;
+                                        text-underline-offset: 3px;
+                                        font-weight: 700;
+                                    "
+                                    ><strong>SMKN 1 Pangandaran</strong></a
+                                >, where I'm pursuing my passion for technology
+                                through the Software Engineering (RPL) major.
+                            </p>
+                            <p>
+                                My coding journey began just a year ago with
+                                Python — and I instantly fell in love with the
+                                power of turning logic into something tangible.
+                                These days, I'm particularly drawn to
+                                <strong>Data Analyst</strong> and exploring the
+                                world of <strong>Web Development</strong>.
+                            </p>
+                            <p>
+                                I believe great software is not just functional
+                                — it's elegant, purposeful, and built with care.
+                                I bring that same philosophy to everything I
+                                create.
+                            </p>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">1<em>yr</em></span
+                                ><span class="stat-label"
+                                    >Coding Experience</span
+                                >
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3<em>+</em></span
+                                ><span class="stat-label">Projects Built</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10<em>th</em></span
+                                ><span class="stat-label"
+                                    >Grade, RPL Major</span
+                                >
+                            </div>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Data Analyst</span>
+                            <span class="skill-tag">Excel</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Firebase Studio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATES -->
+        <section id="certificates">
+            <div class="section-inner">
+                <div class="projects-header">
+                    <div>
+                        <span class="section-label reveal">Achievements</span>
+                        <h2 class="section-title reveal reveal-delay-1">
+                            Certificates &amp; <em>credentials</em>
+                        </h2>
+                        <div
+                            class="section-divider reveal reveal-delay-2"
+                        ></div>
+                    </div>
+                    <p
+                        class="reveal"
+                        style="
+                            max-width: 320px;
+                            font-size: 0.85rem;
+                            color: var(--ink-muted);
+                            line-height: 1.8;
+                        "
+                    >
+                        Click any certificate to view it in full
+                    </p>
+                </div>
+                <div class="certs-grid">
+                    <div
+                        class="cert-card reveal"
+                        onclick="
+                            openLightbox(
+                                'certificate/revoU.jpg',
+                                'RevoU Mini Course — Data Analyst'
+                            )
+                        "
+                        role="button"
+                        tabindex="0"
+                        onkeydown="
+                            if (event.key === 'Enter')
+                                openLightbox(
+                                    'certificate/revoU.jpg',
+                                    'RevoU Mini Course — Data Analyst'
+                                );
+                        "
+                    >
+                        <div class="cert-img-wrap">
+                            <div class="cert-placeholder"></div>
+                            <img
+                                src="certificate/revoU.jpg"
+                                alt="RevoU Mini Course — Data Analyst"
+                                loading="lazy"
+                            />
+                            <div class="cert-overlay">
+                                <span>View Full ↗</span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-title">RevoU Mini Course</h3>
+                            <span class="cert-issuer">Issued by — RevoU</span>
+                        </div>
+                    </div>
+                    <div
+                        class="cert-card reveal reveal-delay-1"
+                        onclick="
+                            openLightbox(
+                                'certificate/Python-Developer_certificate.jpg',
+                                'sololearn Course - Python Developer'
+                            )
+                        "
+                        role="button"
+                        tabindex="0"
+                        onkeydown="
+                            if (event.key === 'Enter')
+                                openLightbox(
+                                    'certificate/Python-Developer_certificate.jpg',
+                                    'sololearn Course - Python Developer'
+                                );
+                        "
+                    >
+                        <div class="cert-img-wrap">
+                            <div class="cert-placeholder"></div>
+                            <img
+                                src="certificate/Python-Developer_certificate.jpg"
+                                alt="sololearn Course - Python Developer"
+                                loading="lazy"
+                            />
+                            <div class="cert-overlay">
+                                <span>View Full ↗</span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-title">Python Developer</h3>
+                            <span class="cert-issuer"
+                                >Issued by — sololearn</span
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="cert-card reveal reveal-delay-2"
+                        onclick="
+                            openLightbox(
+                                'certificate/Data-Analytics-with-AI_certificate.jpg',
+                                'sololearn Course - Data Analytics with AI'
+                            )
+                        "
+                        role="button"
+                        tabindex="0"
+                        onkeydown="
+                            if (event.key === 'Enter')
+                                openLightbox(
+                                    'certificate/Data-Analytics-with-AI_certificate.jpg',
+                                    'sololearn Course - Data Analytics with AI'
+                                );
+                        "
+                    >
+                        <div class="cert-img-wrap">
+                            <div class="cert-placeholder"></div>
+                            <img
+                                src="certificate/Data-Analytics-with-AI_certificate.jpg"
+                                alt="sololearn Course - Data Analytics with AI"
+                                loading="lazy"
+                            />
+                            <div class="cert-overlay">
+                                <span>View Full ↗</span>
+                            </div>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-title">Data Analytics with AI</h3>
+                            <span class="cert-issuer"
+                                >Issued by — sololearn</span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <div class="section-inner">
+                <div class="projects-header">
+                    <div>
+                        <span class="section-label reveal">Selected Work</span>
+                        <h2 class="section-title reveal reveal-delay-1">
+                            Projects &amp; <em>experiments</em>
+                        </h2>
+                        <div
+                            class="section-divider reveal reveal-delay-2"
+                        ></div>
+                    </div>
+                    <p
+                        class="reveal"
+                        style="
+                            max-width: 320px;
+                            font-size: 0.85rem;
+                            color: var(--ink-muted);
+                            line-height: 1.8;
+                        "
+                    >
+                        A collection of things I've built while learning. Click
+                        any card to read more.
+                    </p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card reveal" data-project="1">
+                        <div class="project-card-thumb">
+                            <img
+                                src="img/project1.jpg"
+                                alt="Small Python Project"
+                                loading="lazy"
+                                onerror="this.style.display = 'none'"
+                            />01
+                        </div>
+                        <div class="project-card-body">
+                            <span class="project-card-number"
+                                >Project — 01</span
+                            >
+                            <h3 class="project-card-title">
+                                Small Python Project
+                            </h3>
+                            <div class="project-card-tags">
+                                <span class="project-tag">Python</span
+                                ><span class="project-tag">Pandas</span
+                                ><span class="project-tag">Matplotlib</span
+                                ><span class="project-tag">yt-dlp</span
+                                ><span class="project-tag">sqlite3</span>
+                            </div>
+                        </div>
+                        <button
+                            class="project-expand-btn"
+                            onclick="openModal(1)"
+                            aria-label="Expand project"
+                        >
+                            +
+                        </button>
+                    </div>
+                    <div
+                        class="project-card reveal reveal-delay-1"
+                        data-project="2"
+                    >
+                        <div
+                            class="project-card-thumb"
+                            style="
+                                background: linear-gradient(
+                                    135deg,
+                                    #e8e0d5,
+                                    #c9b99a
+                                );
+                            "
+                        >
+                            <img
+                                src="img/project2.jpg"
+                                alt="Class Website"
+                                loading="lazy"
+                                onerror="this.style.display = 'none'"
+                            />02
+                        </div>
+                        <div class="project-card-body">
+                            <span class="project-card-number"
+                                >Project — 02</span
+                            >
+                            <h3 class="project-card-title">Class Website</h3>
+                            <div class="project-card-tags">
+                                <span class="project-tag">Firebase Studio</span
+                                ><span class="project-tag">Vibe Coding</span
+                                ><span class="project-tag">CLI App</span>
+                            </div>
+                        </div>
+                        <button
+                            class="project-expand-btn"
+                            onclick="openModal(2)"
+                            aria-label="Expand project"
+                        >
+                            +
+                        </button>
+                    </div>
+                    <div
+                        class="project-card reveal reveal-delay-2"
+                        data-project="3"
+                    >
+                        <div
+                            class="project-card-thumb"
+                            style="
+                                background: linear-gradient(
+                                    135deg,
+                                    #dde4e0,
+                                    #a8bfb5
+                                );
+                            "
+                        >
+                            <img
+                                src="img/project3.jpg"
+                                alt="This Portfolio Site"
+                                loading="lazy"
+                                onerror="this.style.display = 'none'"
+                            />03
+                        </div>
+                        <div class="project-card-body">
+                            <span class="project-card-number"
+                                >Project — 03</span
+                            >
+                            <h3 class="project-card-title">
+                                This Portfolio Site
+                            </h3>
+                            <div class="project-card-tags">
+                                <span class="project-tag">Firebase</span
+                                ><span class="project-tag">Vibe Coding</span
+                                ><span class="project-tag">HTML / CSS</span>
+                            </div>
+                        </div>
+                        <button
+                            class="project-expand-btn"
+                            onclick="openModal(3)"
+                            aria-label="Expand project"
+                        >
+                            +
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="project-modal-overlay" id="projectModal">
+            <div class="project-modal" role="dialog" aria-modal="true">
+                <div class="project-modal-header">
+                    <h3 class="project-modal-title" id="modalTitle">
+                        Project Title
+                    </h3>
+                    <button
+                        class="project-modal-close"
+                        onclick="closeModal()"
+                        aria-label="Close"
+                    >
+                        ×
+                    </button>
+                </div>
+                <div class="project-modal-body" id="modalBody"></div>
+            </div>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <section id="experience">
+            <div class="section-inner">
+                <span class="section-label reveal">My Journey</span>
+                <h2 class="section-title reveal reveal-delay-1">
+                    IT Experience <em>Timeline</em>
+                </h2>
+                <div class="section-divider reveal reveal-delay-2"></div>
+                <div class="timeline-wrapper" id="timelineWrapper">
+                    <svg
+                        class="timeline-svg"
+                        id="timelineSvg"
+                        aria-hidden="true"
+                    ></svg>
+                    <div class="timeline-items">
+                        <div class="timeline-item">
+                            <div class="timeline-content-left">
+                                <span class="tl-year"
+                                    >End of 2024 – Early 2025</span
+                                >
+                                <h4 class="tl-title">
+                                    First Steps with Python
+                                </h4>
+                                <p class="tl-desc">
+                                    Began self-learning Python through Course in
+                                    Sololearn. Built my first "Hello World"
+                                    scripts and understood the power of
+                                    automation — completely hooked from day one.
+                                </p>
+                            </div>
+                            <div class="timeline-node">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div class="timeline-item">
+                            <div></div>
+                            <div class="timeline-node">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content-right">
+                                <span class="tl-year">Mid 2025</span>
+                                <h4 class="tl-title">
+                                    Enrolled at
+                                    <a
+                                        href="https://smkn1pangandaran.sch.id/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        style="
+                                            color: inherit;
+                                            text-decoration: underline;
+                                            text-underline-offset: 3px;
+                                        "
+                                        >SMKN 1 Pangandaran</a
+                                    >
+                                </h4>
+                                <p class="tl-desc">
+                                    in the Software Engineering (RPL) major.
+                                    Since I already understand some things about
+                                    Python, I decided to delve into this field.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content-left">
+                                <span class="tl-year">Early 2026</span>
+                                <h4 class="tl-title">
+                                    Diving into Data Analysis
+                                </h4>
+                                <p class="tl-desc">
+                                    I feel that World of Data is the right place
+                                    for me, because I like to stay in front of a
+                                    gadget screen for a long time, and World of
+                                    Data not far away from Python, since that
+                                    started following the Mini Course from RevoU
+                                    about Data Analyst.
+                                </p>
+                            </div>
+                            <div class="timeline-node">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div class="timeline-item">
+                            <div></div>
+                            <div class="timeline-node">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content-right">
+                                <span class="tl-year">Feb 2026</span>
+                                <h4 class="tl-title">
+                                    Exploring Web Development
+                                </h4>
+                                <p class="tl-desc">
+                                    Started make plan about Class Website with
+                                    my classmates, but because of the limited
+                                    free time to learn HTML, CSS and JS, I chose
+                                    Vibe Coding.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content-left">
+                                <span class="tl-year">Mar 2026</span>
+                                <h4 class="tl-title">Building &amp; Growing</h4>
+                                <p class="tl-desc">
+                                    Continuing to sharpen skills across Python,
+                                    Data Analyst, and Vibe Coding Web
+                                    Development. Aiming to contribute to
+                                    real-world projects and expand my technical
+                                    repertoire further.
+                                </p>
+                            </div>
+                            <div class="timeline-node">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="section-inner">
+                <div class="contact-grid">
+                    <div>
+                        <span
+                            class="section-label reveal"
+                            style="color: var(--gold)"
+                            >Let's Talk</span
+                        >
+                        <h2 class="section-title reveal reveal-delay-1">
+                            Get in <em style="color: var(--gold)">touch</em>
+                        </h2>
+                        <div
+                            class="section-divider reveal reveal-delay-2"
+                        ></div>
+                        <div class="contact-info reveal reveal-delay-3">
+                            <p>
+                                Have a question, a project idea, or just want to
+                                say hello? I'd love to hear from you. Fill out
+                                the form and I'll get back to you as soon as
+                                possible.
+                            </p>
+                            <div class="contact-detail">
+                                <div class="contact-detail-icon">✉</div>
+                                <div class="contact-detail-text">
+                                    <strong>Email</strong>
+                                    <a
+                                        href="mailto:auliaramadhanrayhan@gmail.com"
+                                        style="
+                                            color: rgba(255, 255, 255, 0.5);
+                                            text-decoration: none;
+                                        "
+                                        >auliaramadhanrayhan@gmail.com</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="contact-detail-icon">📍</div>
+                                <div class="contact-detail-text">
+                                    <strong>Location</strong>Pangandaran, West
+                                    Java, Indonesia
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="contact-detail-icon">🎓</div>
+                                <div class="contact-detail-text">
+                                    <strong>School</strong>
+                                    <a
+                                        href="https://smkn1pangandaran.sch.id/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        style="
+                                            color: inherit;
+                                            text-decoration: underline;
+                                            text-underline-offset: 3px;
+                                        "
+                                        >SMKN 1 Pangandaran</a
+                                    >
+                                    — RPL Major
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form
+                        class="contact-form reveal reveal-delay-2"
+                        id="contactForm"
+                        novalidate
+                    >
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="contact-name">Full Name *</label>
+                                <input
+                                    type="text"
+                                    id="contact-name"
+                                    name="from_name"
+                                    placeholder="Your name"
+                                    required
+                                />
+                            </div>
+                            <div class="form-field">
+                                <label for="contact-email"
+                                    >Email Address *</label
+                                >
+                                <input
+                                    type="email"
+                                    id="contact-email"
+                                    name="from_email"
+                                    placeholder="your@email.com"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="contact-subject">Subject</label>
+                            <input
+                                type="text"
+                                id="contact-subject"
+                                name="subject"
+                                placeholder="What's this about?"
+                            />
+                        </div>
+                        <div class="form-field">
+                            <label for="contact-message">Message *</label>
+                            <textarea
+                                id="contact-message"
+                                name="message"
+                                placeholder="Tell me what's on your mind..."
+                                required
+                            ></textarea>
+                        </div>
+                        <button
+                            type="submit"
+                            class="form-submit"
+                            id="submitBtn"
+                        >
+                            <span id="submitText">Send Message</span>
+                            <span id="submitArrow">→</span>
+                        </button>
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p class="footer-copy">
+                © 2026 <span>Rayhan Aulia Ramadhan</span>. Built with care &amp;
+                curiosity.
+            </p>
+            <div class="footer-socials">
+                <a
+                    href="https://github.com/PytHoRay"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub</a
+                >
+                <a
+                    href="https://www.linkedin.com/in/a-rays-796738390"
+                    target="_blank"
+                    rel="noopener"
+                    >LinkedIn</a
+                >
+                <a
+                    href="mailto:auliaramadhanrayhan@gmail.com"
+                    style="
+                        color: rgba(255, 255, 255, 0.35);
+                        text-decoration: none;
+                        font-size: 0.7rem;
+                        letter-spacing: 0.15em;
+                        text-transform: uppercase;
+                    "
+                    >Email</a
+                >
+            </div>
+        </footer>
+
+        <!-- LIGHTBOX -->
+        <div
+            id="lightbox-overlay"
+            onclick="closeLightbox()"
+            aria-modal="true"
+            role="dialog"
+            aria-label="Image viewer"
+        >
+            <button
+                id="lightbox-close"
+                onclick="closeLightbox()"
+                aria-label="Close image viewer"
+            >
+                ×
+            </button>
+            <img
+                id="lightbox-img"
+                src=""
+                alt=""
+                onclick="event.stopPropagation()"
+            />
+            <span id="lightbox-caption"></span>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
