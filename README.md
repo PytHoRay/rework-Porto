@@ -31,8 +31,7 @@ This single-page portfolio showcases my journey, projects, certificates, and ski
 - **Google Fonts** – Cormorant Garamond + DM Sans
 
 ## 📁 Project Structure
-
-    .
+<br>.
 <br>├── certificate/
 <br>│   ├── revoU.jpg
 <br>│   ├── Python-Developer_certificate.jpg
