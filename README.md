@@ -96,4 +96,4 @@ This single-page portfolio showcases my journey, projects, certificates, and ski
 
 ---
 
-*© 2025 Rayhan Aulia Ramadhan. Built with care & curiosity.*
+*© 2026 Rayhan Aulia Ramadhan. Built with care & curiosity.*
