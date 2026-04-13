@@ -32,7 +32,7 @@ This single-page portfolio showcases my journey, projects, certificates, and ski
 
 ## 📁 Project Structure
 
- .
+  .
 <br>├── certificate/
 <br>│   ├── revoU.jpg
 <br>│   ├── Python-Developer_certificate.jpg
