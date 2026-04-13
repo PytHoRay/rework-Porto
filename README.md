@@ -40,10 +40,8 @@ This single-page portfolio showcases my journey, projects, certificates, and ski
 <br>├── img/
 <br>│   ├── project1.jpg
 <br>│   ├── project2.jpg
-<br>│   └── project3.jpg
-<br>│   ├── rayProfile.jpg
-<br>├── lama/
-<br>│   ├── index.html <!-- file Portofolio lama -->
+<br>│   ├── project3.jpg
+<br>│   └── rayProfile.jpg
 <br>├── index.html
 <br>├── README.md
 <br>├── script.js
