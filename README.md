@@ -32,13 +32,13 @@ This single-page portfolio showcases my journey, projects, certificates, and ski
 
 ## 📁 Project Structure
 
-.
-├── certificate/
+ .
+ ├── certificate/
 <br>│   ├── revoU.jpg
-│   ├── Python-Developer_certificate.jpg
-│   └── Data-Analytics-with-AI_certificate.jpg
-├── img/
-│   ├── project1.jpg
+<br>│   ├── Python-Developer_certificate.jpg
+<br>│   └── Data-Analytics-with-AI_certificate.jpg
+<br>├── img/
+<br>│   ├── project1.jpg
 │   ├── project2.jpg
 │   └── project3.jpg
 │   ├── rayProfile.jpg
