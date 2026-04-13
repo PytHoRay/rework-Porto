@@ -34,7 +34,7 @@ This single-page portfolio showcases my journey, projects, certificates, and ski
 
 .
 ├── certificate/
-│   ├── revoU.jpg
+<br>│   ├── revoU.jpg
 │   ├── Python-Developer_certificate.jpg
 │   └── Data-Analytics-with-AI_certificate.jpg
 ├── img/
