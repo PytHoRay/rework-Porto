@@ -33,21 +33,21 @@ This single-page portfolio showcases my journey, projects, certificates, and ski
 ## 📁 Project Structure
 
  .
- ├── certificate/
+<br>├── certificate/
 <br>│   ├── revoU.jpg
 <br>│   ├── Python-Developer_certificate.jpg
 <br>│   └── Data-Analytics-with-AI_certificate.jpg
 <br>├── img/
 <br>│   ├── project1.jpg
-│   ├── project2.jpg
-│   └── project3.jpg
-│   ├── rayProfile.jpg
-├── lama/
-│   ├── index.html <!-- file Portofolio lama -->
-├── index.html
-├── README.md
-├── script.js
-└── style.css
+<br>│   ├── project2.jpg
+<br>│   └── project3.jpg
+<br>│   ├── rayProfile.jpg
+<br>├── lama/
+<br>│   ├── index.html <!-- file Portofolio lama -->
+<br>├── index.html
+<br>├── README.md
+<br>├── script.js
+<br>└── style.css
 
 
 ## 🚀 Features
